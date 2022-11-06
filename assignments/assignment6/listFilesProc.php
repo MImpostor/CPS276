@@ -15,6 +15,7 @@ require_once "classes/Crud.php";
   </head>
 <body>
 <div class="container-lg">
+<a href="https://russet-v8.wccnet.edu/~mshigbee/CPS276/assignments/assignment6/" style="text-decoration: none">Add File</a>
 <?php echo $output ?>
 
 </div>
