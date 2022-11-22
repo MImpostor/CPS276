@@ -10,8 +10,9 @@ function manageUpload($file, $post) {
     if (count($post) == 0){
         return "File needs a name";}
     require_once 'classes/Crud.php';
+    move_uploaded_file($file['tmp_name'], "./files/" . $post['fileName']);
     $crud = new Crud;
-    $crud->addFile($post['fileName'], "./files/newsletterorform1.pdf");
-    return "File added successfully";
+    $crud->addFile($post['fileName'], "./files/".$post['fileName']);
+    return "Note added successfully";
     }
 ?>
